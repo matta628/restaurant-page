@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import RestaurantImage from './restaurant.jpg';
+import './style.css';
 
 function createWrapper() {
   const content = document.createElement('div');
@@ -8,35 +8,40 @@ function createWrapper() {
   return content;
 }
 
-function buildHeadline(content) {
+function createHeadline() {
   const header = document.createElement('div');
+  header.classList.add('header');
   const restaurantName = document.createElement('div');
-  restaurantName.innerHTML = 'Vesuvio';
-
-  content.appendChild(header);
+  restaurantName.classList.add('name');
+  restaurantName.innerHTML = 'Eye of Newt';
   header.appendChild(restaurantName);
+  return header;
 }
 
-function buildDescription(content) {
+function createDescription() {
   const description = document.createElement('div');
-  description.innerHTML = 'Artie Bucco\'s Vesuvio caters to your every need!'
-  + ' Eat your favorite italian dishes in a classy, upscale setting.'
-  + ' We even have a two for one deal! Come check us out ';
-  content.appendChild(description);
-}
+  description.classList.add('desc');
+  description.innerHTML = 'If a Shakespearean orphan were given even the tiniest taste of '
+  + 'any one of our world famous specials, it\'d probably combust spontaneously.<br><br> '
+  + 'Want a magical night out with a loved one? A nostalgic reunion with old friends? '
+  + 'Need to impress a potential business partner with your culinary fearlessness? '
+  + 'Eye of Newt has something for everybody!<br><br> Led by a master witch, scion of an ancient '
+  + 'and storied family of infamous magical prowess, our restaurant will enchant your tastebuds '
+  + 'and leave you craving more';
 
-function addBackgroundImage(content) {
-  const restaurantImage = new Image();
-  restaurantImage.src = RestaurantImage;
-  content.appendChild(restaurantImage);
+  return description;
 }
 
 function buildPage() {
   const content = createWrapper();
 
-  buildHeadline(content);
-  buildDescription(content);
-  addBackgroundImage(content);
+  const headline = createHeadline();
+  content.appendChild(headline);
+  const mainInfo = document.createElement('div');
+  mainInfo.classList.add('main-info');
+  const desc = createDescription();
+  mainInfo.appendChild(desc);
+  content.appendChild(mainInfo);
 }
 
 buildPage();
