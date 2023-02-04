@@ -32,16 +32,30 @@ function createDescription() {
   return description;
 }
 
+function createFooter() {
+  const footer = document.createElement('div');
+  footer.classList.add('footer');
+  const credit = document.createElement('div');
+  credit.innerHTML = 'Made by matta628';
+  credit.classList.add('credit');
+  footer.appendChild(credit);
+  return footer;
+}
+
 function buildPage() {
   const content = createWrapper();
 
   const headline = createHeadline();
   content.appendChild(headline);
+
   const mainInfo = document.createElement('div');
   mainInfo.classList.add('main-info');
   const desc = createDescription();
   mainInfo.appendChild(desc);
   content.appendChild(mainInfo);
+
+  const footer = createFooter();
+  content.appendChild(footer);
 }
 
 buildPage();
