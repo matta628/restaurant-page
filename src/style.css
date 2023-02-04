@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
 
 :root{
-  --main-light: #fff;
-  --main-dark: #000;
+  --main-light: #68aaec;
+  --main-dark: rgb(17, 1, 24);
   --main-text: #e0a3e0;
   --main-title: #e0a3e0;
 }
@@ -13,7 +13,6 @@
 }
 
 body{
-  font-weight: 700;
   font-family: 'Modern Antiqua';
   box-sizing: border-box;
   background-color: var(--main-dark);
@@ -26,7 +25,8 @@ body{
   display: flex;
   flex-direction: column;
   font-size: 18px;
-  background: url('./dark-magic.jpeg');
+  background: url('./dark-magic2.jpeg');
+  background-size: 300px;
   justify-content: space-between;
 }
 
@@ -39,12 +39,29 @@ body{
 }
 
 .header{
-  height: 100px;
+  padding: 20px;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+.tabs{
+  display: flex;
+  gap: 20px;
+}
+.tab{
+  border: 1px solid var(--main-light);
+  padding: 10px;
 }
 
 .name{
   font-size: 64px;
-  padding: 20px;
+  font-weight: 700;
 }
 
 .footer{
