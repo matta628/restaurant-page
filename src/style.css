@@ -71,17 +71,18 @@ button {
   height: 40px;
 }
 
-.main-info{
+.main{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px;
-  gap: 25px;
 }
 
-.desc{
+.main-item{
   text-align: center;
-  width: 500px;
+  height: fit-content;
+  width: fit-content;
+  max-width: 500px;
   padding: 50px;
   font-size: 20px;
   color: var(--main-text);
@@ -89,5 +90,14 @@ button {
   border-radius: 25px;
 }
 
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.contact-item{
+  text-align: left;
+}
 
 

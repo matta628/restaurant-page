@@ -58,7 +58,7 @@ function buildInitPage() {
   content.appendChild(headline);
 
   const mainInfo = document.createElement('div');
-  mainInfo.classList.add('main-info');
+  mainInfo.classList.add('main');
   content.appendChild(mainInfo);
 
   const footer = createFooter();

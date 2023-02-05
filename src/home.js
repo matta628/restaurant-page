@@ -1,6 +1,6 @@
 function createHomeInfo() {
   const description = document.createElement('div');
-  description.classList.add('desc');
+  description.classList.add('main-item');
   description.innerHTML = 'If a Shakespearean orphan were given even the tiniest taste of '
   + 'any one of our world famous specials, it\'d probably combust spontaneously.<br><br> '
   + 'Want a magical night out with a loved one? A nostalgic reunion with old friends? '
