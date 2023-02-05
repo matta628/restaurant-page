@@ -1,12 +1,15 @@
 import buildInitPage from './init';
 import createHomeInfo from './home';
+import { createMenuObjects, createMenuInfo } from './menu';
 import createContactInfo from './contact';
 
 function initialize() {
   buildInitPage();
+  createMenuObjects();
   const main = document.querySelector('.main');
   // main.appendChild(createHomeInfo());
-  main.appendChild(createContactInfo());
+  main.appendChild(createMenuInfo());
+  // main.appendChild(createContactInfo());
 }
 
 function addTabListeners() {
@@ -20,7 +23,7 @@ function addTabListeners() {
   const menuTab = document.getElementById('menu-tab');
   menuTab.addEventListener('click', () => {
     if (main.lastChild) main.removeChild(main.lastChild);
-    // main.appendChild(createMenuInfo());
+    main.appendChild(createMenuInfo());
   });
 
   const contactTab = document.getElementById('contact-tab');
