@@ -20,7 +20,7 @@ body{
 }
 
 #content{
-  height: 100vh;
+  min-height: 100vh;
   width: auto;
   display: flex;
   flex-direction: column;
@@ -46,8 +46,11 @@ body{
   gap: 10px;
 }
 
-li {
-  list-style: none;
+button {
+  font-family: "Modern Antiqua";
+  font-size: 20px;
+  color: var(--main-text);
+  background-color: var(--main-dark);
 }
 
 .tabs{
@@ -70,13 +73,16 @@ li {
 
 .main-info{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  gap: 25px;
 }
 
 .desc{
   text-align: center;
   width: 500px;
-  padding: 100px;
+  padding: 50px;
   font-size: 20px;
   color: var(--main-text);
   background-color: var(--main-dark);

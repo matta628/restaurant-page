@@ -9,11 +9,11 @@ function createWrapper() {
 }
 
 function createTabs() {
-  const list = document.createElement('ul');
+  const list = document.createElement('div');
   list.classList.add('tabs');
   const tabs = [];
   for (let i = 0; i < 3; i++) {
-    const item = document.createElement('li');
+    const item = document.createElement('button');
     item.classList.add('tab');
     list.appendChild(item);
     tabs.push(item);
