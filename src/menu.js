@@ -1,4 +1,6 @@
-import FoodImg1 from './cauldron1.jpeg';
+import FoodImg1 from './chicken.jpeg';
+import FoodImg2 from './stew.jpeg';
+import FoodImg3 from './ceviche.jpeg';
 
 class MenuItem {
   constructor(name, img, price, desc) {
@@ -15,26 +17,26 @@ function createMenuObjects() {
   const foodImg1 = new Image();
   foodImg1.src = FoodImg1;
   const foodImg2 = new Image();
-  foodImg2.src = FoodImg1;
+  foodImg2.src = FoodImg2;
   const foodImg3 = new Image();
-  foodImg3.src = FoodImg1;
+  foodImg3.src = FoodImg3;
 
   menuItems.push(new MenuItem(
     'FoodName1',
     foodImg1,
-    '$Price1',
+    '4 Drakki',
     'Description1 loris ipsum loris ipsum loris ipsum loris ipsum loris ipsum loris ipsum',
   ));
   menuItems.push(new MenuItem(
     'FoodName2',
     foodImg2,
-    '$Price2',
+    '8 Drakki',
     'Description2 loris ipsum loris ipsum loris ipsum loris ipsum loris ipsum loris ipsum',
   ));
   menuItems.push(new MenuItem(
     'FoodName3',
     foodImg3,
-    '$Price3',
+    '7 Drakki',
     'Description3 loris ipsum loris ipsum loris ipsum loris ipsum loris ipsum loris ipsum',
   ));
 }

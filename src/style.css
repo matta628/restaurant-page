@@ -90,6 +90,40 @@ button {
   border-radius: 25px;
 }
 
+.menu{
+  display: flex; 
+  flex-direction: column;
+  gap: 50px;
+}
+
+.menu-item{
+  padding: 25px;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  grid: "name price" 50px
+        "img img" 300px
+        "desc desc" 100px
+        / 1fr 1fr;
+}
+.menu-item-name{
+  grid-area: name;
+  justify-self: left;
+}
+.menu-item-price{
+  grid-area: price;
+  justify-self: right;
+}
+.menu-item-img{
+  grid-area: img;
+}
+.menu-item-img img{
+  height: 300px;
+}
+.menu-item-desc{
+  grid-area: desc;
+}
+
 .contact{
   display: flex;
   flex-direction: column;
@@ -99,5 +133,3 @@ button {
 .contact-item{
   text-align: left;
 }
-
-
