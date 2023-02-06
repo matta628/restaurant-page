@@ -22,22 +22,25 @@ function createMenuObjects() {
   foodImg3.src = FoodImg3;
 
   menuItems.push(new MenuItem(
-    'FoodName1',
+    'Braised Elysian Pol',
     foodImg1,
-    '4 Drakki',
-    'Description1 loris ipsum loris ipsum loris ipsum loris ipsum loris ipsum loris ipsum',
+    '7 Drakki',
+    'Roasted over one of only two infinite fires in all the free cities, this exquisite pol has been '
+    + 'seasoned to perfection, and infused with strengthening, yet delicious substances',
   ));
   menuItems.push(new MenuItem(
-    'FoodName2',
+    'Cambrian Nox Stew',
     foodImg2,
     '8 Drakki',
-    'Description2 loris ipsum loris ipsum loris ipsum loris ipsum loris ipsum loris ipsum',
+    'The most ancient and renowned of our three specials, this stew will boost your health and '
+    + 'stamina as the delicious meats warm and sate your stomach',
   ));
   menuItems.push(new MenuItem(
-    'FoodName3',
+    'Sea of Klalia Mix',
     foodImg3,
-    '7 Drakki',
-    'Description3 loris ipsum loris ipsum loris ipsum loris ipsum loris ipsum loris ipsum',
+    '10 Drakki',
+    'Cooked with a concotion brewed over 7 nights, this seafood mix will open your mind\'s eye '
+    + 'and give you a long lasting enhanced focus',
   ));
 }
 
