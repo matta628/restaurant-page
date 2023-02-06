@@ -61,6 +61,9 @@ button {
   border: 1px solid var(--main-light);
   padding: 10px;
 }
+.selected-tab{
+  border: 5px solid var(--main-light);
+}
 
 .name{
   font-size: 64px;
